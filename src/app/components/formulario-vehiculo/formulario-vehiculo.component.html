@@ -1,6 +1,6 @@
 <mat-card>
   <mat-card-content>
-    <form [formGroup]="vehiculoFormulario">
+    <form [formGroup]="vehiculoFormulario" (ngSubmit)="enviarVehiculo()">
       <div class="insertForm">
         <mat-card-title> Registro de vehiculo </mat-card-title>
 
@@ -10,7 +10,7 @@
         </mat-form-field>
         <mat-form-field appearance="fill">
           <mat-label>Tipo Vehiculo</mat-label>
-          <mat-select formControlName="tipo_vehiculo">
+          <mat-select formControlName="tipo_vehiculoId">
             <mat-option *ngFor="let item of tipoVehiculos" [value]="item.id">
               {{ item.name }}
             </mat-option>
@@ -19,5 +19,6 @@
         <button class="button" mat-button>Registrar</button>
       </div>
     </form>
+    <button (click)="traerVehiculos()">Traer Vehiculos</button>
   </mat-card-content>
 </mat-card>
