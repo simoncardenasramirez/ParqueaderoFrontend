@@ -1,0 +1,19 @@
+.insertForm {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Una columna */
+  grid-column-gap: 20px; /* Espacio entre columnas */
+  align-items: center;
+  width: 500px; /* Limita el ancho al 50% de la pantalla */
+  margin: 250px auto; /* Centra horizontalmente */
+}
+.mat-form-field {
+  width: 100%;
+  margin: 0px auto;
+}
+.button {
+  width: 50%;
+  margin: 0px auto;
+  background-color: #ffa800;
+  border-radius: 20px;
+  color: #fff;
+}
