@@ -13,13 +13,15 @@ import {MatInputModule} from '@angular/material/input';
 import {ReactiveFormsModule } from '@angular/forms';
 import {MatSelectModule} from '@angular/material/select';
 import {MatButtonModule} from '@angular/material/button';
+import { ConsultarVehiculoComponent } from './components/consultar-vehiculo/consultar-vehiculo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     FormularioVehiculoComponent,
-    InicioComponent
+    InicioComponent,
+    ConsultarVehiculoComponent
   ],
   imports: [
     BrowserModule,
