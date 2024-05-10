@@ -1,7 +1,14 @@
 .mat-card {
-  width: 500px; /* ajusta el ancho según sea necesario */
-  margin: 80px auto; /* Centra horizontalmente */
+  width: 1325px; /* Ancho igual al ancho de la ventana */
+  height: 515px; /* Alto igual al alto de la ventana */
+  margin: auto; /* Centra horizontalmente */
+  border: none; /* Quitar el borde de la tarjeta */
+  display: flex; /* Utilizar flexbox */
+  flex-direction: column; /* Establecer la dirección del contenido en columna */
+  justify-content: center; /* Centrar verticalmente */
+  align-items: center; /* Centrar horizontalmente */
 }
+
 .button {
   width: 50%;
   margin: 10px 5px;
@@ -9,8 +16,7 @@
   border-radius: 20px;
   color: #fff;
 }
+
 .mat-card-content {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
+  text-align: center; /* Alinear el contenido al centro */
 }

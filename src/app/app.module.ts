@@ -13,7 +13,9 @@ import {MatInputModule} from '@angular/material/input';
 import {ReactiveFormsModule } from '@angular/forms';
 import {MatSelectModule} from '@angular/material/select';
 import {MatButtonModule} from '@angular/material/button';
+import {MatTableModule} from '@angular/material/table';
 import { ConsultarVehiculoComponent } from './components/consultar-vehiculo/consultar-vehiculo.component';
+import { CeldasDisponiblesComponent } from './components/celdas-disponibles/celdas-disponibles.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { ConsultarVehiculoComponent } from './components/consultar-vehiculo/cons
     MenuComponent,
     FormularioVehiculoComponent,
     InicioComponent,
-    ConsultarVehiculoComponent
+    ConsultarVehiculoComponent,
+    CeldasDisponiblesComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +35,8 @@ import { ConsultarVehiculoComponent } from './components/consultar-vehiculo/cons
     MatInputModule,
     ReactiveFormsModule,
     MatSelectModule,
-    MatButtonModule
+    MatButtonModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

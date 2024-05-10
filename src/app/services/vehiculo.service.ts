@@ -1,17 +1,18 @@
+import { Vehiculo } from 'src/app/interfaces/Vehiculo';
 import { Injectable } from '@angular/core';
-import { Vehiculo } from '../interfaces/Vehiculo';
 import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class VehiculoService {
-  vehiculos: Vehiculo[]=[]
-  constructor() { }
-  agregarVehiculo(data:Vehiculo){
-    this.vehiculos.push(data)
+  constructor(private http: HttpClient) {}
+  agregarVehiculo(data: Vehiculo): Observable<Vehiculo> {
+    return this.http.post<Vehiculo>('http://localhost:4000/vehiculo', data);
   }
-  traerVehiculosRegistrados():Vehiculo[]{
-     return this.vehiculos;
+  traerVehiculosRegistrados(): Observable<Vehiculo[]> {
+    return this.http.get<Vehiculo[]>('http://localhost:4000/vehiculo');
+    // return this.http.get<string>('')
   }
 }
