@@ -16,7 +16,7 @@ import { Celda } from 'src/app/interfaces/Celda';
   styleUrls: ['./formulario-vehiculo.component.css'],
 })
 export class FormularioVehiculoComponent implements OnInit {
-  displayedColumns: string[] = ['name', 'status', 'vehicleType', 'action'];
+  displayedColumns: string[] = ['name', 'status', 'action'];
   informacionTabla: Celda[] = [];
   isSearch: boolean = false;
   vehiculos: Vehiculo[] = [];
