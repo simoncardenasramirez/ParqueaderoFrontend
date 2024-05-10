@@ -14,6 +14,7 @@ describe('InicioComponent', () => {
 
     fixture = TestBed.createComponent(InicioComponent);
     component = fixture.componentInstance;
+    
     fixture.detectChanges();
   });
 

@@ -3,17 +3,34 @@
   grid-template-columns: repeat(1, 1fr); /* Una columna */
   grid-column-gap: 20px; /* Espacio entre columnas */
   align-items: center;
+  justify-content: center; /* Añadir esta línea para centrar horizontalmente */
   width: 500px; /* Limita el ancho al 50% de la pantalla */
-  margin: 250px auto; /* Centra horizontalmente */
+  margin: 137px auto; /* Centra horizontal y verticalmente */
 }
+
 .mat-form-field {
   width: 100%;
-  margin: 0px auto;
+  margin: 0 auto;
 }
+
 .button {
   width: 50%;
-  margin: 0px auto;
+  margin: 20px auto; /* Añadir un poco de espacio en la parte inferior */
   background-color: #ffa800;
   border-radius: 20px;
   color: #fff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+.center {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+  justify-content: center; /* Añadir esta línea para centrar horizontalmente */
+  margin: 0 auto; /* Centra horizontal y verticalmente */
 }

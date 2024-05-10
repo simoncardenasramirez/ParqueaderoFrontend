@@ -1,7 +1,7 @@
 import { TipoVehiculo } from "./TipoVehiculo";
 
 export interface Vehiculo {
+  id:number;
   matricula: string;
-  tipo_vehiculoId: number;
-  // tipovehiculo: TipoVehiculo;
+  tipoVehiculo: TipoVehiculo;
 }
